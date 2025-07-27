@@ -16,7 +16,8 @@ export const portfolioData = {
   location: "Sikar, India",
   social: {
       github: "https://github.com/AnkitKhyalia", // Placeholder, replace with actual link
-      linkedin: "https://www.linkedin.com/in/ankit-khyalia/", // Placeholder
+      linkedin: "https://www.linkedin.com/in/ankitkhyalia/", // Placeholder
+      leetcode: "https://leetcode.com/u/Khyalia/",
   },
   introduction: "A passionate and driven Software Engineer with experience in building robust and scalable web applications. Proficient in the MERN stack, Next.js, and cloud technologies, with a strong foundation in data structures and algorithms. Eager to contribute to innovative projects and grow as a developer.",
   experience: [
