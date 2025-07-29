@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { portfolioData } from "../data/portfolioData";
 import {
   ChevronDown,
+  ChevronUp,
   Code,
   Github,
   Linkedin,
@@ -44,6 +45,7 @@ const Sidebar: React.FC = () => {
         >
           {/* <span className="hidden sm:block sm:text-8">Show Contacts</span> */}
           <div className="">
+            {isOpen ? <ChevronUp/>: <ChevronDown />}
             <ChevronDown />
             {/* <ion-icon name="chevron-down"></ion-icon> */}
           </div>
