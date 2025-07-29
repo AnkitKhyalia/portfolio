@@ -55,7 +55,39 @@ const Sidebar: React.FC = () => {
           isOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
+        <ul className="flex justify-start items-center gap-[15px] pb-1 pl-[7px] xl:justify-center">
+          <li>
+            <a
+              href={portfolioData.social.github}
+              className="text-neutral-600 text-lg hover:text-neutral-200"
+            >
+              {/* <ion-icon name="logo-github"></ion-icon> */}
+              <Github />
+            </a>
+          </li>
+          <li>
+            <a
+              href={portfolioData.social.linkedin}
+              className="text-neutral-600 text-lg hover:text-neutral-200"
+            >
+              {/* <ion-icon name="logo-linkedin"></ion-icon> */}
+              <Linkedin />
+            </a>
+          </li>
+          
+          <li>
+            <a
+              href={portfolioData.social.leetcode}
+              className="text-neutral-600 text-lg hover:text-neutral-200"
+            >
+              {/* <ion-icon name="logo-linkedin"></ion-icon> */}
+              <Code/>
+            </a>
+          </li>
+          
+        </ul>
         <div className="w-full h-px bg-jet my-4"></div>
+        
         <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-x-[15px] sm:gap-y-[30px] xl:grid-cols-1">
           {/* Contact Items */}
           <li className="flex items-center gap-4 min-w-full">
@@ -112,37 +144,7 @@ const Sidebar: React.FC = () => {
         </ul>
         <div className="w-full h-px bg-jet my-4 xl:my-[15px] xl:opacity-0"></div>
         {/* Social Links */}
-        <ul className="flex justify-start items-center gap-[15px] pb-1 pl-[7px] xl:justify-center">
-          <li>
-            <a
-              href={portfolioData.social.github}
-              className="text-neutral-600 text-lg hover:text-neutral-200"
-            >
-              {/* <ion-icon name="logo-github"></ion-icon> */}
-              <Github />
-            </a>
-          </li>
-          <li>
-            <a
-              href={portfolioData.social.linkedin}
-              className="text-neutral-600 text-lg hover:text-neutral-200"
-            >
-              {/* <ion-icon name="logo-linkedin"></ion-icon> */}
-              <Linkedin />
-            </a>
-          </li>
-          
-          <li>
-            <a
-              href={portfolioData.social.leetcode}
-              className="text-neutral-600 text-lg hover:text-neutral-200"
-            >
-              {/* <ion-icon name="logo-linkedin"></ion-icon> */}
-              <Code/>
-            </a>
-          </li>
-          
-        </ul>
+        
       </div>
     </aside>
   );
